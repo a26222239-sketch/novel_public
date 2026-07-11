@@ -1,3 +1,8 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>滄溟引 · 卷一</title>
 <style>
   :root {
@@ -165,7 +170,15 @@
   #totop:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
   ::selection { background: var(--accent-soft); }
+
+  /* 手機：收窄兩側留白，讓正文更寬、不再擠成一條 */
+  @media (max-width: 34rem) {
+    .wrap { padding-left: .95rem; padding-right: .95rem; }
+    body { line-height: 1.9; }
+  }
 </style>
+</head>
+<body>
 
 <div class="tide"><i id="tide"></i></div>
 
@@ -2405,3 +2418,5 @@
   });
 })();
 </script>
+</body>
+</html>
